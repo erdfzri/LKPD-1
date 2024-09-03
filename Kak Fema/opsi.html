@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option</title>
+</head>
+<body>
+       <h1>Opsi jawaban & Poin</h1> 
+    <form action="" id="container">
+            <div class="card" id="formContainer">
+                <label for="">Opsi 1 :</label><br>
+                <input type="text" placeholder="Poin" name="poin" id="poin" value="">
+                <input type="text" placeholder="Deskripsi Opsi" name="desk_opsi" id="desk_opsi" value=""><br> 
+            </div>
+        </form>
+        <button id="opsi" type="button" onclick="addOpsi()">+Tambah Opsi</button>
+
+    
+    <script>
+        let opsiCount = 1;
+        function addOpsi() {
+            opsiCount++; 
+            let opsiNew = document.getElementById("container");
+            opsiNew.innerHTML += `
+                <label for="">Opsi ${opsiCount} :</label><br>
+                <input type="text" placeholder="Poin" name="poin" id="poin${opsiCount}" value="">
+                <input type="text" placeholder="Deskripsi Opsi" name="desk_opsi" id="desk_opsi${opsiCount}" value=""><br>
+            `;
+        }
+    </script>
+    
+</body>
+</html>
