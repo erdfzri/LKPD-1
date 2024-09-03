@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Gaya untuk navbar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang navbar dengan sedikit transparansi */
+            overflow: hidden;
+        }
+
+        /* Gaya untuk logo */
+        .navbar .logo img {
+            height: 50px;
+            width: 50px;
+            float: left;
+            margin-right: 10px;
+            background-color: #ffffff;
+            /* Jarak antara logo dan link navbar */
+        }
+
+        /* Gaya untuk link di dalam navbar */
+        .navbar a, .navbar .dropbtn {
+            float: left;
+            display: block;
+            color: #ffffff; /* Warna teks putih */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            line-height: 50px; /* Menyelaraskan teks dengan logo */
+        }
+
+        /* Gaya untuk link saat di-hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Gaya untuk dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px; 
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9); /* Background dropdown dengan sedikit transparansi */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links dalam dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Tambahkan background color saat hover pada dropdown links */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Tampilkan dropdown content saat hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Gaya untuk body */
+        body {
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 120vh;
+            background-image: url('https://cdn-web.ruangguru.com/landing-pages/assets/hs/Imported_Blog_Media/Germany-Lanscape.jpg');
+        }
+
+        /* Gaya untuk container */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Background dengan sedikit transparansi */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="https://www.zarla.com/images/zarla-travelik-1x1-2400x2400-20220114-8b8rfg4j4j4tbmxgjjt4.png?crop=1:1,smart&width=250&dpr=2" alt="Logo" />
+            </a>
+            <a href="index.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="inggris.html">Inggris</a>
+                    <a href="italy.html">Italy</a>
+                    <a href="jerman.html">Jerman</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Konten Utama -->
+    <div class="container">
+        <h1>Jerman</h1>
+        <p>Jerman memiliki warisan budaya yang kaya dan beragam, termasuk kontribusi besar dalam bidang musik, sastra, filosofi, dan seni. Negara ini terkenal dengan festival musiknya, seperti Oktoberfest di Munich, serta memiliki sejumlah museum dan galeri seni yang terkenal di dunia.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Display</title>
+    <script>
+        function displaySearchText() {
+            var inputText = document.getElementById("searchInput").value;
+            if (inputText === "") {
+                document.getElementById("displayText").innerText = "Tidak ada data yang dimasukkan.....";
+            } else {
+
+                document.getElementById('sabar').innerHTML = "sabar sedang dicari....."
+
+               setTimeout(() => {
+                document.getElementById("displayText").innerText = "Mencari data " + inputText;
+                 document.getElementById('sabar').innerHTML = ""
+               }, 3000);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Mencari data</h2>
+    <form onsubmit="event.preventDefault(); displaySearchText();">
+        <label for="searchInput">Masukkan teks:</label><br><br>
+        <input type="text" id="searchInput" name="searchInput"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h1 id="sabar"></h1>
+
+    <p id="displayText">Tidak mencari data....</p>
+</body>
+</html>

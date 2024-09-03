@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+    <style>
+        /* Gaya untuk navbar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8); /* Warna latar belakang navbar dengan sedikit transparansi */
+            overflow: hidden;
+        }
+
+        /* Gaya untuk logo */
+        .navbar .logo img {
+            height: 50px;
+            width: 50px;
+            float: left;
+            margin-right: 10px;
+            background-color: #ffffff;
+            /* Jarak antara logo dan link navbar */
+        }
+
+        /* Gaya untuk link di dalam navbar */
+        .navbar a, .navbar .dropbtn {
+            float: left;
+            display: block;
+            color: #ffffff; /* Warna teks putih */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            line-height: 50px; /* Menyelaraskan teks dengan logo */
+        }
+
+        /* Gaya untuk link saat di-hover */
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Gaya untuk dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px; 
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9); /* Background dropdown dengan sedikit transparansi */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links dalam dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Tambahkan background color saat hover pada dropdown links */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Tampilkan dropdown content saat hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Gaya untuk body */
+        body {
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 120vh;
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyiMJibGdY7Pg5lEfnZBGENhyYhetkezkgajKvKJYVMWIpSYBfVGDA2EYbjkYMfhtMpzfzQ-1eKzw3fitVRD6_-JHhVqVECaWiWvRhl1YAvD8tWVf297QDSp9fhc6mm9YpTBN-LS5yXJxK/s1600/UK_London.jpg');
+        }
+
+        /* Gaya untuk container */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Background dengan sedikit transparansi */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="https://www.zarla.com/images/zarla-travelik-1x1-2400x2400-20220114-8b8rfg4j4j4tbmxgjjt4.png?crop=1:1,smart&width=250&dpr=2" alt="Logo" />
+            </a>
+            <a href="index.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="inggris.html">Inggris</a>
+                    <a href="italy.html">Italy</a>
+                    <a href="jerman.html">Jerman</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>Inggris</h1>
+        <p>Inggris adalah sebuah negara konstituen yang merupakan bagian dari Britania Raya. Negara ini berbatasan dengan Skotlandia di sebelah utara dan Wales di sebelah barat, Laut Irlandia di barat laut, Laut Keltik di barat daya, serta Laut Utara di sebelah timur dan Selat Inggris, yang memisahkannya dari benua Eropa, di sebelah selatan. Sebagian besar wilayah Inggris terdiri dari bagian tengah dan selatan Pulau Britania Raya di Atlantik Utara. Inggris juga mencakup lebih dari 100 pulau kecil seperti Isles of Scilly dan Isle of Wight. Wilayah yang saat ini bernama Inggris pertama kali dihuni oleh manusia modern selama periode Paleolitikum, tetapi nama England ini berasal dari kata Angles, yang merupakan salah satu suku Jermanik yang menetap di sana pada abad ke-5 dan ke-6. Inggris menjadi negara yang bersatu pada tahun 927 M, dan sejak Zaman Penjelajahan yang dimulai pada abad ke-15, Inggris telah memberikan pengaruh budaya dan hukum yang signifikan ke berbagai belahan dunia.</p>
+    </div>
+  
+
+</body>
+</html>
+

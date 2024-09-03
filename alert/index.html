@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Countdown Alert</title>
+    <style>
+        /* Tambahkan beberapa gaya untuk tombol */
+        .countdown-btn {
+            padding: 10px 20px;
+            background-color: #2cf70d;
+            color: rgb(255, 255, 255);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            margin: 270px;
+            position: fixed;
+        }
+
+        .countdown-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="countdown-btn" onclick="showCountdownAlert()">Munculkan Alert</button>
+
+    <script>
+        function showCountdownAlert() {
+            let countdown = 5;
+            const alertBox = document.createElement('div');
+            alertBox.style.position = 'fixed';
+            alertBox.style.top = '50%';
+            alertBox.style.left = '50%';
+            alertBox.style.transform = 'translate(-50%, -50%)';
+            alertBox.style.padding = '20px';
+            alertBox.style.backgroundColor = '#f52008';
+            alertBox.style  .color = '#ffffff';
+            alertBox.style.border = '1px solid #f5c6cb';
+            alertBox.style.borderRadius = '5px';
+            alertBox.style.fontSize = '20px';
+            alertBox.style.textAlign = 'center';
+            document.body.appendChild(alertBox);
+
+            const alertInterval = setInterval(() => {
+                alertBox.innerText = `Danger! Alert akan tertutup dalam : ${countdown}`;
+                countdown--;
+
+                if (countdown < 0) {
+                    clearInterval(alertInterval);
+                    document.body.removeChild(alertBox);
+                }
+            }, 1000);
+        }
+        // setTimeout(function() {
+        //     console.log("Ini muncul setelah 2 detik");
+        // }, 5000);
+  // Fungsi ini akan dieksekusi sekali setelah 2000 ms (2 detik)
+
+    </script>
+
+</body>
+</html>

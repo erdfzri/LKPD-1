@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Gambar dan Opacity</title>
+    <style>
+        #imageDisplay {
+            width: 300px;
+            height: 200px;
+            display: block;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Pilih Gambar:</h2>
+
+    <select id="gambarSelect" onchange="updateImage()">
+        <option value="image1.jpg">Gambar 1</option>
+        <option value="image2.jpg">Gambar 2</option>
+        <option value="image3.jpg">Gambar 3</option>
+    </select><br>
+
+    <h2>Pilih Opacity:</h2>
+
+    <select id="opacitySelect" onchange="updateOpacity()">
+        <option value="1">100%</option>
+        <option value="0.5">50%</option>
+        <option value="0.2">20%</option>
+    </select><br>
+
+    <img id="imageDisplay" src="image1.jpg" alt="">
+
+    <script>
+        function updateImage() {
+            var selectedImage = document.getElementById('gambarSelect').value;
+            document.getElementById('imageDisplay').src = selectedImage;
+        }
+
+        function updateOpacity() {
+            var selectedOpacity = document.getElementById('opacitySelect').value;
+            document.getElementById('imageDisplay').style.opacity = selectedOpacity;
+        }
+    </script>
+</body>
+</html>
